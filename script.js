@@ -30,7 +30,7 @@ const fetchFact = async (event) => {
    
   let month = monthInput.value;
   let day = dayInput.value;
-  let response = await fetch(`http://numbersapi.com/${month}/${day}/date?json`);
+  let response = await fetch(`https://number-api-swart.vercel.app/fact/${month}/${day}`);
   let data = await response.json();
 
   displayFact(data.text);

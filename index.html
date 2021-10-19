@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <title>Birthday Facts</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>What happened on your birthday?</h1>
+    <div class="form-div">
+      <form action="" id="birthday-form" onsubmit="fetchFact(event)">
+        <label for="month" form="birthday-form"></label>
+        <input id="month" type="text" placeholder="Enter month" required>
+        <br>
+        <label for="day" form="birthday-form"></label>
+        <input id="day" type="text" placeholder="Enter day" required>
+        <br>
+        <button type="submit">Get fact!</button>
+        <div class="tooltip">
+          <div class="tooltip-arrow"></div>
+          Hint: Keep pressing enter for more facts.
+        </div>
+      </form>
+    </div>
+    <div class="fact">
+      <p id="paragraph"></p>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
